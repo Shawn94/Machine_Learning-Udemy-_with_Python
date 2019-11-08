@@ -14,7 +14,7 @@ y = dataset.iloc[:,2].values
 
 #Fitting Linear Regression Model
 from sklearn.linear_model import LinearRegression
-lin_reg = LinearR egression()
+lin_reg = LinearRegression()
 lin_reg.fit(X,y)
 
 #Fitting Polynomial Regression Model
@@ -42,3 +42,11 @@ plt.title("Truth or Bluff(Polynomial Regression)")
 plt.xlabel('Position level')
 plt.ylabel('Salary')
 plt.show()
+
+
+#Predicting a new result with Linear Regression
+lin_reg.predict([[6.5]])
+
+#Predicting a new result with Polynomial Regression
+line_reg2.predict(poly_reg.fit_transform([[6.5]]))
+
